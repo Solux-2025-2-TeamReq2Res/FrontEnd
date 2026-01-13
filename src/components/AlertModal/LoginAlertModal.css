@@ -122,3 +122,78 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+.alert-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 24px;
+}
+
+.alert-modal-content {
+  width: min(340px, calc(100vw - 48px)); /* ✅ 가로 폭 줄임 */
+  background: #111;                      /* ✅ 검은 바탕 */
+  color: #fff;
+  border-radius: 16px;
+  padding: 22px 20px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+}
+
+.alert-modal-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.alert-body {
+  padding: 12px 0 18px;
+}
+
+.alert-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.82);
+  text-align: center;
+  white-space: pre-line;
+}
+
+.alert-modal-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.alert-btn-cancel {
+  flex: 1;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.alert-btn-primary {
+  flex: 1;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.alert-btn-cancel:hover,
+.alert-btn-primary:hover {
+  filter: brightness(0.97);
+}
