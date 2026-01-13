@@ -552,3 +552,23 @@
   color: #111;
   font-weight: 600;
 }
+
+/* StudyPage.css 맨 위쪽 아무데나 */
+:root{
+  --study-maxw: min(1120px, 92vw); /* ✅ 여기 숫자만 너희 UI에 맞게 조절 가능 */
+}
+
+.studyCta{
+  width: var(--study-maxw);
+  margin: 0 auto 34px;
+}
+
+.studyListWrap{
+  width: var(--study-maxw);
+  margin: 0 auto;
+}
+
+.pager{
+  width: var(--study-maxw);
+  margin: 18px auto 90px;
+}
